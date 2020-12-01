@@ -72,6 +72,10 @@ STATIC_PATHS = [
     ]
 
 # path-specific metadata
+# putting this off for now since I only have one post, and I think it looks a little silly anyway
+# M_METADATA_AUTHOR_PATH = 'authors'
+# M_METADATA_CATEGORY_PATH = 'categories'
+# M_METADATA_TAG_PATH = 'tags'
 EXTRA_PATH_METADATA = {
     'static/favicon.ico': {'path': 'favicon.ico'},
     'extra/robots.txt': {'path': 'robots.txt'},
@@ -92,7 +96,7 @@ PLUGINS = ['m.abbr',
            'm.images',
            'm.link',
            'm.math',
-           'm.metadata',
+         #  'm.metadata',
            'm.plots',
            'm.sphinx',
            'm.qr',
@@ -104,7 +108,7 @@ THEME = 'm.css/pelican-theme'
 THEME_STATIC_DIR = 'static'
 DIRECT_TEMPLATES = ['index']
 
-M_THEME_COLOR = '#22272e'
+M_THEME_COLOR = '#22272e' # original #22272e
 M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,600%7CSource+Sans+Pro:400,400i,600,600i&subset=latin-ext',
                'static/m-dark.css',
                # enable so we see the problems right away (not present for
@@ -155,8 +159,8 @@ AUTHORS_SAVE_AS = None # Not used
 CATEGORIES_SAVE_AS = None # Not used
 TAGS_SAVE_AS = None # Not used
 
-SLUGIFY_SOURCE = 'basename'
-PATH_METADATA = '(?P<slug>.+).rst'
+# SLUGIFY_SOURCE = 'basename'
+# PATH_METADATA = '(?P<slug>.+).rst'
 
 LOAD_CONTENT_CACHE = False
 
