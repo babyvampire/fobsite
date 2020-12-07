@@ -18,6 +18,8 @@ SITENAME = 'fob.monster'
 SITESUBTITLE = 'some things for FOBs'
 SITEURL = 'https://fob.monster'
 
+M_FAVICON = ('favicon.ico', 'image/x-ico')
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -69,7 +71,9 @@ STATIC_PATHS = [
     'extra/robots.txt',
     'media',
     'text',
+    'static'
     ]
+EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': '../favicon.ico'}}
 
 # path-specific metadata
 # putting this off for now since I only have one post, and I think it looks a little silly anyway
@@ -96,12 +100,12 @@ PLUGINS = ['m.abbr',
            'm.images',
            'm.link',
            'm.math',
-         #  'm.metadata',
+           'm.metadata',
            'm.plots',
            'm.sphinx',
            'm.qr',
            'm.vk',
-           'better_figures_and_images'
+          # 'better_figures_and_images'
            ]
 
 THEME = 'm.css/pelican-theme'
@@ -159,8 +163,8 @@ AUTHORS_SAVE_AS = None # Not used
 CATEGORIES_SAVE_AS = None # Not used
 TAGS_SAVE_AS = None # Not used
 
-# SLUGIFY_SOURCE = 'basename'
-# PATH_METADATA = '(?P<slug>.+).rst'
+SLUGIFY_SOURCE = 'basename'
+PATH_METADATA = '(?P<slug>.+).rst'
 
 LOAD_CONTENT_CACHE = False
 
