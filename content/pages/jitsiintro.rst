@@ -18,9 +18,9 @@ Jitsi Meet is an `open-source`_ video-conferencing application.  It looks a lot 
 Why Jitsi?
 ----------
 
-Zoom, Google Meet, and others do a good job.  They are easy to use and reliable, with world-spanning reach.  However, most of these applications are closed-source and run by for-profit companies.  A good and ancient rule of thumb for the Internet is that "when the product is free, *you* are the product."  In most cases, the way in which you become the product is through the harvesting of your personal information, which is then sold for profit.
+Zoom, Google Meet, and others do a good job.  They are reliable and easy to use, with world-spanning reach.  However, most of these applications are closed-source and run by for-profit companies.  A good and ancient rule of thumb for the Internet is that "when the product is free, *you* are the product."  In most cases, the way in which you become the product is through the harvesting of your personal information, which is then sold for profit.
 
-Jitsi does not work like that.  In addition to the code itself being open source, free to look at and change, your personal information will not be harvested.  Even better, you can set up Jitsi on your own server so that you are able to control the flow of information yourself.
+Jitsi does not work in that way.  Your personal information is not harvested, and there is nothing concealed in the code to do that.  The code itself beingis open source, free to look at and change.  Even better, you can set up Jitsi on your own server so that you are able to control the flow of information yourself.
 
 For some organizations, anonymity of the participants in a meeting is important.  You do not need to set up an account to use Jitsi, and at least in my particular setup, your IP address is saved only for the length of the meeting and then discarded.
 

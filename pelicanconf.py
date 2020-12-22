@@ -12,7 +12,6 @@ import qrcode
 # PyEmbedRst().register()
 
 
-
 AUTHOR = 'nick'
 SITENAME = 'fob.monster'
 SITESUBTITLE = 'some things for FOBs'
@@ -35,12 +34,12 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-            ('Pelican', 'http://getpelican.com/'),
-            ('Python.org', 'http://python.org/'),
-            )
+    ('Pelican', 'http://getpelican.com/'),
+    ('Python.org', 'http://python.org/'),
+)
 SOCIAL = (
-            ('github', 'https://github.com/babyvampire'),
-            )
+    ('github', 'https://github.com/babyvampire'),
+)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
@@ -54,13 +53,17 @@ DEFAULT_PAGINATION = False
 # M_SITE_LOGO_TEXT = 'fobsite'
 M_SITE_LOGO = 'images/flyingFrankiesaurus.jpg'
 
-## text on the bottom of the page
+M_LINKS_NAVBAR1 = [('Joining a Meeting', 'pages/joinmeeting/', 'joinmeeting', []),
+                   ('Starting a Meeting', 'pages/jitsistartmeeting/',
+                    'jitsistartmeeting', []),
+                   ('Useful Jitsi Links', 'pages/jitsilinks/', 'jitsilinks', [])]
+
+# text on the bottom of the page
 M_LINKS_FOOTER1 = []
 M_LINKS_FOOTER2 = []
 M_LINKS_FOOTER3 = []
 M_LINKS_FOOTER4 = []
-M_FINE_PRINT = SITENAME + """. Put together with `Pelican <https://docs.getpelican.com/en/stable/>`_ and `m.css <https://mcss.mosra.cz>`_.
-Here's my `GitHub <https://github.com/babyvampire>`_."""
+M_FINE_PRINT = SITENAME + """. Put together with `Pelican <https://docs.getpelican.com/en/stable/>`_ and `m.css <https://github.com/mosra/m.css>`_."""
 
 ARTICLE_PATHS = ['articles']
 PAGE_PATHS = ['pages']
@@ -72,7 +75,7 @@ STATIC_PATHS = [
     'media',
     'text',
     'static'
-    ]
+]
 EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': '../favicon.ico'}}
 
 # path-specific metadata
@@ -83,7 +86,7 @@ EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': '../favicon.ico'}}
 EXTRA_PATH_METADATA = {
     'static/favicon.ico': {'path': 'favicon.ico'},
     'extra/robots.txt': {'path': 'robots.txt'},
-    }
+}
 
 PLUGIN_PATHS = ['m.css/plugins',
                 'pelican-plugins']
@@ -105,24 +108,25 @@ PLUGINS = ['m.abbr',
            'm.sphinx',
            'm.qr',
            'm.vk',
-          # 'better_figures_and_images'
+           # 'better_figures_and_images'
            ]
 
 THEME = 'm.css/pelican-theme'
 THEME_STATIC_DIR = 'static'
 DIRECT_TEMPLATES = ['index']
 
-M_THEME_COLOR = '#22272e' # original #22272e
+M_THEME_COLOR = '#22272e'  # original #22272e
 M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,600%7CSource+Sans+Pro:400,400i,600,600i&subset=latin-ext',
                'static/m-dark.css',
                # enable so we see the problems right away (not present for
                # publish)
                'static/m-debug.css'
-              ]
-#M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600',
-               #'static/m-light.css']
+               ]
+# M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600',
+# 'static/m-light.css']
 
-FORMATTED_FIELDS = ['summary', 'landing', 'header', 'footer', 'description', 'badge']
+FORMATTED_FIELDS = ['summary', 'landing',
+                    'header', 'footer', 'description', 'badge']
 
 M_HTMLSANITY_SMART_QUOTES = True
 M_HTMLSANITY_HYPHENATION = True
@@ -133,7 +137,8 @@ if not shutil.which('latex'):
 
 # Used by the m.code plugin docs
 
-_css_colors_src = re.compile(r"""<span class="mh">#(?P<hex>[0-9a-f]{6})</span>""")
+_css_colors_src = re.compile(
+    r"""<span class="mh">#(?P<hex>[0-9a-f]{6})</span>""")
 _css_colors_dst = r"""<span class="mh">#\g<hex><span class="m-code-color" style="background-color: #\g<hex>;"></span></span>"""
 
 M_CODE_FILTERS_PRE = {
@@ -150,7 +155,7 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARCHIVES_URL = 'examples/'
 ARCHIVES_SAVE_AS = 'examples/index.html'
-ARTICLE_URL = '{slug}/' # category is part of the slug (i.e., examples)
+ARTICLE_URL = '{slug}/'  # category is part of the slug (i.e., examples)
 ARTICLE_SAVE_AS = '{slug}/index.html'
 AUTHOR_URL = 'author/{slug}/'
 AUTHOR_SAVE_AS = 'author/{slug}/index.html'
@@ -159,9 +164,9 @@ CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 
-AUTHORS_SAVE_AS = None # Not used
-CATEGORIES_SAVE_AS = None # Not used
-TAGS_SAVE_AS = None # Not used
+AUTHORS_SAVE_AS = None  # Not used
+CATEGORIES_SAVE_AS = None  # Not used
+TAGS_SAVE_AS = None  # Not used
 
 SLUGIFY_SOURCE = 'basename'
 PATH_METADATA = '(?P<slug>.+).rst'
