@@ -19,7 +19,7 @@ This page will walk you through the process of starting and hosting a meeting.
 `Go to our Jitsi Meet home page`_
 =================================
 
-Go to the URL of our Jitsi-Meet server: https://meet.fob.monster (preferably using Google Chrome\ [1]_ or a smartphone app). This is the page that you will see:
+Go to the URL of our Jitsi-Meet server: https://meet.fob.monster (preferably using Google Chrome\ [1]_ or a smartphone app). This is the important part of the page that you will see:
 
 .. figure:: {static}/images/jitsiLandingPage.jpg
     :scale: 50%
@@ -30,12 +30,12 @@ Go to the URL of our Jitsi-Meet server: https://meet.fob.monster (preferably usi
 
     .. class:: m-text m-small m-noindent
 
-    The Jitsi landing page
+    The prompt to start a meeting
 
 `Choose the name of the meeting`_
 =================================
 
-In the "Start a new meeting" text box, enter the name of the meeting you would like to start.  This name is important, since the way other people will join the meeting will be by going to the URL::
+In the "Start meeting" text box, enter the name of the meeting you would like to start.  This name is important, since the way other people will join the meeting will be by going to the URL::
 
    https://meet.fob.monster/[name of meeting]
 
@@ -225,7 +225,7 @@ There are a whole bunch of other things that we could set up, if we think they m
 	    Look, someone cool is asking to join our meeting!
 	    
 
-.. [1] At the moment, the Google Chrome browser works a little better than Firefox due to some limitations in the way that Firefox implements WebRTC.  This is likely to be fixed in later versions of Firefox - but for now Google Chrome is the suggested browser to use. See `this section`_ for a discussion of how to use Jitsi using a smartphone app (Android or iOS) or a desktop application.
+.. [1] At the moment, the Google Chrome browser works a little better than Firefox or Safari due to some limitations in the way that Firefox implements WebRTC.  If the meeting only has a few people in it (up to 10) this might not matter too much.  This is likely to be fixed in later versions of Firefox (? about Safari) - but for now Google Chrome is the suggested browser to use. See `this section`_ for a discussion of how to use Jitsi using a smartphone app (Android or iOS) or a desktop application.
 
 
 .. _this section: {filename}/pages/jitsilinks.rst
